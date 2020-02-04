@@ -1,7 +1,6 @@
-@import '../../assets/styles//shared/colors.scss';
 
-
-.app-header{
+@import '../../../assets/styles//shared/colors.scss';
+.app-title{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -13,5 +12,5 @@
         height: 3px;
         width:60px;
         background:$clr-03;
-    }  
+    }
 }

@@ -1,0 +1,50 @@
+@import '../../../assets/styles/shared/mixins.scss';
+.app-header{
+    max-width:1280px;
+    margin:0 auto;
+    padding: 0 10px;
+        &__navbar{
+            @include flexS
+        }
+        &__logo {
+            @include flexC;
+            flex-direction: column;
+            letter-spacing: 0.3em;
+            font-size: .9em;
+            h2{
+                margin: 0; 
+            }
+            &--space{
+                letter-spacing: 0.55em;
+            }
+        }
+        &__navigation{
+            display: none;
+        }
+        .btn-media{
+            display:none;
+        }
+}
+
+@media (min-width: 1280px){
+    .app-header{
+  
+        &__navigation{
+            display: flex;
+            ul{
+                @include flexS;
+                list-style-type: none;
+                li{
+                    padding: 0 10px;
+                }
+            }
+        }
+        &__hamburger{
+            display:none;
+        }
+        .btn-media{
+            display:flex;
+        }
+    }
+
+}
