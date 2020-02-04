@@ -1,0 +1,17 @@
+@import '../../assets/styles//shared/colors.scss';
+
+
+.app-header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        margin-bottom:15px;
+    }
+    .underline{
+        height: 3px;
+        width:60px;
+        background:$clr-03;
+    }  
+}

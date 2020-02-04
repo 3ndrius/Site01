@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/styles/shared/typography.scss';
+@import './assets/styles/shared/colors.scss';
+
+
+
+
+body{
+    font-family: $f-family;
+    font-size: 16px;
+    font-weight:400;
+    color:$clr-02;
+}
