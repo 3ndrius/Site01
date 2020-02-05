@@ -1,3 +1,17 @@
+
+
+## Available Scripts
+
+In the project directory, you can run:
+### `npm install`
+### `ng serve`
+
+Runs the app in the development mode.<br />
+Open [http://localhost:4200](http://localhost:4200) to view it in the browser.
+
+##  [DEMO](https://site-01.netlify.com)
+
+
 # Valueadd
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
