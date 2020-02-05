@@ -26,11 +26,46 @@
                 <p>Living in today's metropolitan world of cellular phones, mobile computers.</p>
             </li>
         </ul>
-
-       
-
     </section>
 
+    <section class="app-writeus">
+        <app-title [title]="write"></app-title>
+        <div class="app-writeus__wrap">
+            <h3>Potrzebujesz pomocy z projektem?</h3>
+            <p>Napis do nas, jesteśmy profesjonalistami w temacie programowania, consultingu i audytu IT</p>
+            <form class="app-writeus__form">
+                <div class="app-writeus__form-control">
+                    <label for="name">Imie i nazwisko</label>
+                    <input type="text" name="name" placeholder="Jan Kowalski">
+                </div>
+                <div class="app-writeus__form-control">
+                    <label for="email">Adres e-mail</label>
+                    <input type="email" name="email" placeholder="jan.kowalski@mojafirma.pl">
+                </div>
+                <div class="app-writeus__form-control">
+                    <label for="number">Numer telefonu</label>
+                    <input type="number" name="number" placeholder="+48 285 285 687">
+                </div>
+                <div class="app-writeus__form-control">
+                    <label for="Temat">Temat</label>
+                    <select name="Temat">
+                        <option value="Consulting">Consulting</option>
+                        <option value="Audit">Audit</option>
+                    </select>
+                </div>
+                <div class="app-writeus__form-control">
+                    <label for="tresc">Treść</label>
+                    <textarea name="tresc" cols="30" rows="10" placeholder="Tutaj wpisz treść wiadomości"></textarea>
+                </div>
+                <input type="checkbox" name="term" checked class="app-writeus__checkbox">
+                <app-button class="btn--media" [name]="send"></app-button>
+            </form>
+        </div>
+    </section>
 
-
+    <section class="app-trusted">
+        <app-title [title]="trusted"></app-title>
+        <img src="../../../assets/images/trusted.png" alt="trusted-img" class="app-trusted__img">
+    </section>
 </main>
+

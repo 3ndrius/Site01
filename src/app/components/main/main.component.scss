@@ -58,12 +58,91 @@
         background:url('../../../assets/images/Pattern.svg') top center no-repeat;
     }
    }
+}
 
+.app-writeus{ 
+    @include wrapC;
+    max-width: 800px;
+    .btn--media{
+        align-self: center;
+    }
+
+    &__wrap{
+        margin: 50px 0 0px;
+        border: 0.5px solid $clr-01;
+        flex-direction: column;
+        width:100%;
+        padding: 15px 5%;
+        box-sizing: border-box;
+        font-size: 0.8em;
+        width: 100%;
+
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0 20px;
+    }
+    &__form-control{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-color: $clr-01;
+        label{
+            font-weight: $fw-02;
+        }
+        input,select{
+            margin: 10px 0;
+            height: 40px;
+            border-color:$clr-01;
+            border:0.5px solid $clr-01;
+            padding-left: 10px;
+        &::placeholder{
+            color: $clr-01;
+        }
+       
+           
+        }
+        textarea{
+            margin: 10px 0;
+            height: 150px;
+            border: 0.5px solid $clr-01;
+            padding: 10px;
+            color: $clr-01;
+            font-family: $f-family;
+            font-weight: $fw-01;
+            &::placeholder{
+                color: $clr-01;
+            }
+        }           
+    }
+    &__checkbox{
+        display: none;
+    }
+    
 }
 
 
-
-
+// @media(max-width:1280px){
+//     .app-trusted{
+//         @include wrapC;
+//         display:none;
+//         &__img{
+//             padding: 50px 0;
+//             width:100%;
+//             height: auto;
+//         };
+//     }
+// }
+.app-trusted{
+    @include wrapC;
+    display: none;
+    &__img{
+        padding: 50px 0;
+        width:100%;
+        height: auto;
+    };
+}
 
 
 
@@ -84,8 +163,22 @@
             
        }
     }
+   .app-writeus{
+        .btn--media{
+            align-self: flex-end;
+        }
+        &__checkbox{
+            margin: 10px 0;
+            display: block;
+            &:checked ~ .checkmark{
+                background-color: blue;
+            }
+        }
+        
+    }
+   
+    
 }
-
 
 // desktop media //
 @media (min-width: 1280px){
@@ -98,6 +191,14 @@
         &__paragraph{
             max-width:65%;
         }
-    
+    }
+    .app-writeus{
+        &__checkbox{
+            margin: 10px 0;
+            display: block;
+        }
+    }
+    .app-trusted{
+        display:block;
     }
 }

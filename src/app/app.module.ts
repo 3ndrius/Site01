@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/button/button.component';
 import { TitleComponent } from './components/title/title.component';
 import { HeaderComponent } from './components/header/header.component';
+import { MainComponent } from './components/main/main.component';
 
 
 
@@ -14,6 +15,7 @@ import { HeaderComponent } from './components/header/header.component';
     ButtonComponent,
     TitleComponent,
     HeaderComponent,
+    MainComponent,
    
   ],
   imports: [

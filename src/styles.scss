@@ -5,9 +5,15 @@
 
 
 
-body{
+html,body{
     font-family: $f-family;
     font-size: 16px;
-    font-weight:400;
+    font-weight:$fw-01;
     color:$clr-02;
+    margin:0;
+    padding: 0;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
 }

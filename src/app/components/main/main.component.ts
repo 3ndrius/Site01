@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 })
 export class MainComponent  {
 
-  write:string = 'Write us';
+  send: string = "Wyślij";
 
   passion: string = "Our passion";
+  write: string = "Write us";
+  trusted: string = "Trusted Us";
   
   constructor() { }
 }
