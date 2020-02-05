@@ -6,6 +6,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { TitleComponent } from './components/title/title.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -16,6 +17,7 @@ import { MainComponent } from './components/main/main.component';
     TitleComponent,
     HeaderComponent,
     MainComponent,
+    FooterComponent,
    
   ],
   imports: [

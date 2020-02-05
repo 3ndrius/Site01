@@ -1,0 +1,53 @@
+
+@import '../../../assets/styles/shared/mixins.scss';
+@import '../../../assets/styles/shared/colors.scss';
+
+.app-footer{
+    @include flexC;
+    flex-direction: column;
+    padding:30px 20px;
+    &__wrap{
+        @include flexS; 
+        flex-direction: column;
+        border-top: 0.3px solid $clr-01;
+        max-width:1280px;
+        padding:40px 20px;
+        width:100%;
+        box-sizing: border-box;
+    }
+    &__navigation{
+        @include flexS;
+        ul{
+            list-style-type: none;
+            text-align: center;
+
+            li{
+                margin: 20px;
+                color:$clr-01;
+            }
+        }
+    }
+    &__social{
+        @include flexS;
+        width:60px;
+    }
+    &__copy{
+        color:$clr-01;
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+@media(min-width:768px) {
+    .app-footer{
+        &__wrap{
+            flex-direction: row;
+        }
+        &__navigation{
+           
+            ul{
+                @include flexS;
+                
+            }
+        }
+    }
+}
