@@ -1,6 +1,6 @@
 
 @import '../../../assets/styles//shared/colors.scss';
-.app-title{
+.title{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@
     }
     .underline{
         height: 3px;
-        width:60px;
+        width: 90px;
         background:$clr-03;
     }
 }

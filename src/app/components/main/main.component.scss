@@ -1,0 +1,103 @@
+@import '../../../assets/styles/shared/colors.scss';
+@import '../../../assets/styles/shared/typography.scss';
+@import '../../../assets/styles/shared/mixins.scss';
+
+// * section hero * //
+.app-hero{
+    max-width: 1800px;
+    background: url('../../../assets/images/phone_banner_photo.png') no-repeat;
+    background-size: cover;
+    min-height: 450px;
+    margin:0 auto;
+    color:white;
+    display:flex;
+    align-items:flex-end;
+        &__wrap{
+           @include wrapC;
+        }
+        &__heading{
+            max-width:92%;    
+        }
+        &__paragraph{
+            max-width:92%;
+            line-height: 1.5em; 
+        }
+}
+
+// ** section passion ** //
+
+.app-passion{
+    padding: 50px 0;
+
+   &__list{
+       list-style-type: none;
+        @include flexC;
+        flex-direction: column;
+        
+   }
+   &__item{
+    display:flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    max-width: 340px;
+    text-align: center;
+    height: 300px;
+    margin:20px 10px;
+    position: relative;
+    z-index: 5;
+    &::before{
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        margin:0 auto;
+        height: 80%;
+        width:65%;
+        background:url('../../../assets/images/Pattern.svg') top center no-repeat;
+    }
+   }
+
+}
+
+
+
+
+
+
+
+// tablet media //
+@media (min-width: 768px){
+    .app-hero{
+        background-image: url('../../../assets/images/desktop_banner_photo.png');    
+    }
+
+
+    .app-passion{
+        padding: 50px 0;
+    
+       &__list{
+           list-style-type: none;
+            @include flexC;
+            flex-direction: row;
+            
+       }
+    }
+}
+
+
+// desktop media //
+@media (min-width: 1280px){
+    .app-hero{
+        background-image: url('../../../assets/images/desktop_banner_photo.png');
+       
+        &__heading{
+            max-width:65%;
+        }
+        &__paragraph{
+            max-width:65%;
+        }
+    
+    }
+}

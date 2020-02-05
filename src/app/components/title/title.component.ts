@@ -10,6 +10,6 @@ export class TitleComponent {
   constructor() { }
 
   @Input()
-  heading: string;
+  title: string;
  
 }
