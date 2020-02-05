@@ -97,11 +97,9 @@
             border-color:$clr-01;
             border:0.5px solid $clr-01;
             padding-left: 10px;
-        &::placeholder{
-            color: $clr-01;
-        }
-       
-           
+            &::placeholder{
+                color: $clr-01;
+            } 
         }
         textarea{
             margin: 10px 0 30px;
@@ -111,15 +109,14 @@
             color: $clr-01;
             font-family: $f-family;
             font-weight: $fw-01;
-            &::placeholder{
-                color: $clr-01;
-            }
+                &::placeholder{
+                    color: $clr-01;
+                }
         }           
     }
     &__checkbox-control{
         display: none;
-    }
-    
+    } 
 }
 .app-trusted{
     @include wrapC;
@@ -136,25 +133,20 @@
     .app-hero{
         background-image: url('../../../assets/images/desktop_banner_photo.png');    
     }
-
-
     .app-passion{
         padding: 50px 0;
     
        &__list{
            list-style-type: none;
             @include flexC;
-            flex-direction: row;
-            
+            flex-direction: row;       
        }
     }
    .app-writeus{
         .btn--media{
             align-self: flex-end;
         }        
-    }
-   
-    
+    }  
 }
 
 // desktop media //
@@ -202,20 +194,6 @@
                 border-radius: 2px;
                 background-color: rgb(34, 37, 180);
             }
-    //         input[type=checkbox]:checked:after {
-    //             content: "";
-    //             display: block;
-    //             width: 5px;
-    //             height: 10px;
-    //             border: solid black;
-    //             border-width: 0 2px 2px 0;
-    //             -webkit-transform: rotate(45deg);
-    //             -ms-transform: rotate(45deg);
-    //             transform: rotate(45deg);
-    //             position: absolute;
-    //             top: 2px;
-    //             left: 6px;
-    //    }
         } 
     }
     .app-trusted{
