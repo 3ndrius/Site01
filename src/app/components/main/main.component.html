@@ -57,7 +57,9 @@
                     <label for="tresc">Treść</label>
                     <textarea name="tresc" cols="30" rows="10" placeholder="Tutaj wpisz treść wiadomości"></textarea>
                 </div>
-                <input type="checkbox" name="term" checked class="app-writeus__checkbox">
+                <span class="app-writeus__checkbox-control">
+                    <input type="checkbox" name="term"  class="app-writeus__checkbox"> <p>Wysyłając wiadomość zgadzasz sie na przekazanie nam Twoich danych osobowych</p>
+                </span>
                 <app-button class="btn--media" [name]="send"></app-button>
             </form>
         </div>
